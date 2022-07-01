@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.nwt": "twig",
+        "*.nimja": "twig"
+    },
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+}

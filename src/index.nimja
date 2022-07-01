@@ -1,0 +1,4 @@
+{% extends "partials/master.nimja" %}
+{% block content %}
+<h1>TACO TIME</h1>
+{% endblock %}
