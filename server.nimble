@@ -1,11 +1,11 @@
 # Package
 
 version       = "0.1.0"
-author        = "Anonymous"
-description   = "A new awesome nimble package"
+author        = "Ericarthurc"
+description   = "nim server dev"
 license       = "MIT"
 srcDir        = "src"
-bin           = @["tests"]
+bin           = @["server"]
 
 
 # Dependencies

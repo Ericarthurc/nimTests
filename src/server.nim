@@ -4,7 +4,7 @@ import nimja/parser
 import std/[with, os, strutils]
 
 proc yourFunc(title: string, body: string): string =
-   compileTemplateFile(getScriptDir() / "index.nimja")
+   compileTemplateFile(getScriptDir() / "views/index.nimja")
 
 proc index*(ctx: Context) {.async.} =
    resp yourFunc("Index", "Root Content")

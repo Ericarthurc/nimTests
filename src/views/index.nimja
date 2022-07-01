@@ -1,4 +1,4 @@
-{% extends "partials/master.nimja" %}
+{% extends "views/partials/master.nimja" %}
 {% block content %}
 <h1>{{body}}</h1>
 {% endblock %}
