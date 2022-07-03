@@ -3,10 +3,12 @@ import prologue/middlewares/[staticfile]
 import nimja/parser
 import std/[with, os, strutils]
 
+import router/router
+
 proc yourFunc(title: string, body: string): string =
    compileTemplateFile(getScriptDir() / "views/index.nimja")
 
-proc index*(ctx: Context) {.async.} =
+proc indexHandler*(ctx: Context) {.async.} =
    resp yourFunc("Index", "Root Content")
 
 let
@@ -23,7 +25,8 @@ with app:
    get("/sw.js", redirectTo("/public/sw.js"))
 
    # Routes
-   get("/", index)
+   get("/", indexHandler)
+   blogRoutes
 
    # Start Server
    run()
